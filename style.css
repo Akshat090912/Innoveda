@@ -9,8 +9,8 @@
 body {
     font-family: 'Roboto', Arial, sans-serif; /* Modern font */
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
+    color: #eaeaea; /* Light gray text color */
+    background-color: #2c3e50; /* Dark slate gray background */
     margin: 0;
 }
 
@@ -20,9 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: linear-gradient(90deg, #007bff, #00aaff); /* Updated gradient */
+    background: linear-gradient(90deg, #c0392b, #8e1c1a); /* Deep red gradient */
     color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 header .logo {
@@ -52,31 +52,31 @@ header .nav-links {
 
 header .nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: #eaeaea;
     font-weight: bold;
     text-transform: uppercase;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 header .nav-links li a:hover {
-    color: #ffcc00;
-    border-bottom: 3px solid #ffcc00;
+    color: #e74c3c; /* Light red hover effect */
+    border-bottom: 3px solid #e74c3c;
 }
 
 header .cta {
     padding: 12px 25px;
-    background: #ffcc00;
+    background: #e74c3c; /* Light red CTA button */
     border: none;
-    color: #007bff;
+    color: #212121;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header .cta:hover {
-    background: #ffe680;
+    background: #c0392b;
     transform: scale(1.1);
 }
 
@@ -115,8 +115,8 @@ header .cta:hover {
 
 .hero .btn {
     padding: 12px 25px;
-    background: #ffcc00;
-    color: #007bff;
+    background: #e74c3c;
+    color: #212121;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -124,7 +124,7 @@ header .cta:hover {
 }
 
 .hero .btn:hover {
-    background: #ffe680;
+    background: #c0392b;
     transform: scale(1.1);
 }
 
@@ -153,20 +153,20 @@ header .cta:hover {
 section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #34495e; /* Dark slate gray section background */
 }
 
 .about, .contact {
-    background-color: #f4f4f4;
+    background-color: #2c3e50; /* Dark slate background for About and Contact */
 }
 
 .services {
-    background: linear-gradient(to bottom, #eef1f5, #ffffff);
+    background: linear-gradient(to bottom, #2c3e50, #34495e); /* Gradient dark slate to darker gray */
 }
 
 section h2 {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #e74c3c; /* Light red for headings */
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -176,33 +176,33 @@ section h2 {
     width: 300px;
     margin: 20px;
     padding: 25px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #455a64;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .service-card h3 {
     margin-bottom: 10px;
-    color: #007bff;
+    color: #e74c3c; /* Light red for service titles */
     font-size: 1.5rem;
 }
 
 .service-card p {
     font-size: 1rem;
-    color: #555;
+    color: #eaeaea; /* Light gray for description */
 }
 
 /* Additional styles for the service cards if you want to style buttons */
 .service-card button {
     padding: 10px 20px;
-    background: #007bff;
+    background: #e74c3c;
     color: white;
     border: none;
     cursor: pointer;
@@ -212,7 +212,7 @@ section h2 {
 }
 
 .service-card button:hover {
-    background: #0056b3;
+    background: #c0392b;
     transform: scale(1.05);
 }
 
@@ -220,10 +220,10 @@ section h2 {
 .contact form {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: #455a64; /* Dark gray form background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact form input,
@@ -231,13 +231,15 @@ section h2 {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 5px;
+    background-color: #37474f; /* Darker background for input fields */
+    color: #eaeaea; /* Light gray text for inputs */
 }
 
 .contact form button {
     padding: 12px 25px;
-    background: #007bff;
+    background: #e74c3c;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -246,15 +248,15 @@ section h2 {
 }
 
 .contact form button:hover {
-    background: #0056b3;
+    background: #c0392b;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #007bff;
-    color: #fff;
+    background: #2c3e50; /* Dark slate footer background */
+    color: #eaeaea;
     font-size: 1rem;
 }
 
@@ -278,15 +280,15 @@ footer {
 }
 
 .bg-red-500 {
-    background-color: red;
+    background-color: #e74c3c; /* Light red alert color */
 }
 
 .bg-yellow-500 {
-    background-color: yellow;
+    background-color: #f39c12; /* Yellow alert color */
 }
 
 .bg-green-500 {
-    background-color: green;
+    background-color: #2ecc71; /* Emerald green alert color */
 }
 
 /* Map */
