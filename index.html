@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innoveda Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://avatars.githubusercontent.com/u/113432914?s=200&v=4" alt="Innoveda">
+            <span class="logo-text">Innoveda</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta">Get Started</button>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Innoveda</h1>
+        <p>Empowering innovation through technology.</p>
+        <a href="#services" class="btn">Learn More</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Innoveda is dedicated to providing cutting-edge solutions that drive success and growth.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Pothole</h3>
+            <p>Identify and map potholes using sensors and GPS.</p>
+            <button class="btn pothole-btn">Explore Pothole Detection</button>
+        </div>
+        <div class="service-card">
+            <h3>Proximity</h3>
+            <p>Detect nearby obstacles and provide real-time alerts.</p>
+            <button class="btn proximity-btn">Explore Proximity Management</button>
+        </div>
+        <div class="service-card">
+            <h3>Speed Monitoring</h3>
+            <p>Monitor and manage speed with real-time alerts for safer driving.</p>
+            <button class="btn speed-monitoring-btn">Explore Speed Monitoring</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Innoveda. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
