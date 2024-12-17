@@ -1,0 +1,205 @@
+/* Root Variables */
+:root {
+    /* Primary Colors */
+    --dark-gray: #1F1F1F;
+    --light-gray: #D3D3D3;
+    --black: #0D0D0D;
+    --panel-gray: #333333;
+    
+    /* Accent Colors */
+    --neon-green: #32CD32;
+    --amber: #FFC107;
+    --red: #FF5252;
+    --electric-blue: #00AEEF;
+    
+    /* Gradients */
+    --dark-gradient: linear-gradient(180deg, #000000, #1F1F1F);
+    --accent-gradient: linear-gradient(90deg, #00AEEF, #32CD32);
+  }
+  
+  /* Global Styles */
+  body {
+    background: var(--dark-gradient);
+    color: var(--light-gray);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Typography */
+  .code, .numbers {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: var(--dark-gradient);
+  }
+  
+  .hero-headline {
+    color: var(--light-gray);
+  }
+  
+  .hero-highlight {
+    color: var(--electric-blue);
+  }
+  
+  /* Cards and Panels */
+  .card, .panel {
+    background-color: var(--panel-gray);
+    border: 1px solid var(--electric-blue);
+    box-shadow: 0 0 15px rgba(0, 174, 239, 0.15);
+  }
+  
+  /* Interactive Elements */
+  .btn-primary {
+    background: var(--neon-green);
+    box-shadow: 0 0 20px rgba(50, 205, 50, 0.3);
+  }
+  
+  .btn-secondary {
+    background: var(--electric-blue);
+  }
+  
+  .btn-secondary:hover {
+    background: var(--accent-gradient);
+    transition: background 0.3s ease;
+  }
+  
+  /* Alert States */
+  .alert {
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .alert-success {
+    background: var(--neon-green);
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.4);
+  }
+  
+  .alert-warning {
+    background: var(--amber);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+  }
+  
+  .alert-critical {
+    background: var(--red);
+    box-shadow: 0 0 15px rgba(255, 82, 82, 0.4);
+  }
+  
+  /* Maps and Charts */
+  .map-container {
+    background: var(--black);
+  }
+  
+  .radar-map {
+    background: var(--black);
+  }
+  
+  .radar-circle {
+    border: 1px solid rgba(211, 211, 211, 0.2);
+    border-radius: 50%;
+  }
+  
+  /* Pothole Markers */
+  .pothole-marker-minor {
+    background: var(--amber);
+    border-radius: 50%;
+    animation: pulse-small 2s infinite;
+  }
+  
+  .pothole-marker-major {
+    background: var(--red);
+    border-radius: 50%;
+    animation: pulse-large 2s infinite;
+  }
+  
+  /* Speedometer */
+  .speedometer {
+    background: var(--black);
+    border-radius: 50%;
+  }
+  
+  .speed-indicator {
+    transition: all 0.3s ease;
+  }
+  
+  .speed-safe { color: var(--neon-green); }
+  .speed-warning { color: var(--amber); }
+  .speed-danger { 
+    color: var(--red);
+    animation: pulse-glow 1s infinite;
+  }
+  
+  /* Dashboard Elements */
+  .dashboard {
+    background: var(--black);
+  }
+  
+  .proximity-panel {
+    background: rgba(31, 31, 31, 0.9);
+  }
+  
+  .alert-sidebar {
+    background: var(--panel-gray);
+    border-left: 1px solid var(--electric-blue);
+  }
+  
+  /* Animations */
+  @keyframes pulse-small {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.2); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 0.8; }
+  }
+  
+  @keyframes pulse-large {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.4); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 0.9; }
+  }
+  
+  @keyframes pulse-glow {
+    0% { filter: drop-shadow(0 0 5px var(--red)); }
+    50% { filter: drop-shadow(0 0 20px var(--red)); }
+    100% { filter: drop-shadow(0 0 5px var(--red)); }
+  }
+  
+  /* Charts */
+  .chart {
+    background: var(--dark-gray);
+  }
+  
+  .chart-line-success { stroke: var(--neon-green); }
+  .chart-line-warning { stroke: var(--amber); }
+  .chart-line-danger { stroke: var(--red); }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+    
+    .alert-sidebar {
+      border-left: none;
+      border-top: 1px solid var(--electric-blue);
+    }
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: var(--black);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--electric-blue);
+    border-radius: 4px;
+  }
+  
+  /* Additional Effects */
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .glass-effect {
+    background: rgba(31, 31, 31, 0.7);
+    backdrop-filter: blur(10px);
+  }
